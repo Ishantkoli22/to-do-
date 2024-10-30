@@ -1,0 +1,141 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #f0f0f0, #e0e0e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #5cb85c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.3);
+}
+
+/* Button Styling */
+button {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(92, 184, 92, 0.3);
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Task List */
+#task-list {
+    margin-top: 25px;
+}
+
+/* Task Item Styling */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.task:hover {
+    background-color: #f4f8f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task.complete {
+    text-decoration: line-through;
+    background-color: #d9ffd9;
+    color: #555;
+}
+
+/* Task Info */
+.task-info {
+    flex-grow: 1;
+    font-size: 1rem;
+}
+
+/* Task Buttons */
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.task-buttons button:hover {
+    transform: scale(1.1);
+}
+
+.task-buttons .edit {
+    color: #007bff;
+}
+
+.task-buttons .delete {
+    color: #d9534f;
+}
+
+.task-buttons .complete {
+    color: #5cb85c;
+}
